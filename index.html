@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo de la empresa -->
+        <img src="logo.webp" alt="Logo de la empresa" class="logo">
+        
+        <!-- Formulario de login -->
+        <form action="#" method="post">
+            <!-- Campo de usuario -->
+            <input type="text" placeholder="Usuario" class="input-field" required>
+            <!-- Campo de contraseña -->
+            <input type="password" placeholder="Contraseña" class="input-field" required>
+            <!-- Botones -->
+            <div class="button-container">
+                <button type="submit" class="login-button">Iniciar Sesión</button>
+                <button type="button" class="forgot-password" onclick="window.location.href='recuperar.html'">¿Olvidó su contraseña?</button>
+            </div>
+        </form>
+        <!-- Botón de registro -->
+        <button type="button" class="login-button" onclick="window.location.href='registro.html'">Registrarse</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/*variables para colores */
+:root {
+    --primary-color: #3498db; /* Color principal para botones y otros elementos */
+    --background-color: #f0f0f0; /* Color de fondo de la página */
+    --input-border-color: #ccc; /* Color del borde de los campos de entrada */
+    --button-text-color: #fff; /* Color del texto de los botones */
+}
+
+/* fondo general a la página */
+body {
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0;
+}
+
+/* Contenedor del formulario de login */
+.login-container {
+    background-color: #fff;
+    padding: 30px; /* Ajustamos el padding del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+    text-align: center;
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada */
+.input-field {
+    width: 100%;
+    padding: 15px; /*padding para separar el texto del borde */
+    margin: 15px 0; /* margen para crear espacio entre los campos */
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño del input */
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+}
+
+/* Estilos para el botón de iniciar sesión */
+.login-button {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de olvidó su contraseña */
+.forgot-password {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
